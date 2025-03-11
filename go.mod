@@ -1,4 +1,4 @@
-module github.com/socme-project/certfr-scrapping
+module github.com/socme-project/certfrscrapping
 
 go 1.23.6
 
