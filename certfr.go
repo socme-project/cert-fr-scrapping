@@ -1,4 +1,4 @@
-package certfr_scrapping
+package certfr_scraping
 
 import (
 	"fmt"
