@@ -1,8 +1,8 @@
-# CERT FR Scrapping
+# CERT FR Scraping
 
 This Go package provides functionalities to scrape security alerts, CTI (Cyber
-Threat Intelligence), and advisories from the official CERT-FR website (Agence
-Nationale de la Sécurité des Systèmes d'Information).
+Threat Intelligence), and advisories from the official CERT-FR website from
+l'ANSSI (Agence Nationale de la Sécurité des Systèmes d'Information).
 
 ---
 
@@ -19,28 +19,28 @@ Nationale de la Sécurité des Systèmes d'Information).
 
 ## Usage
 
-Here's how you can use the `certfr_scrapping` package in your Go application:
+Here's how you can use the `certfr_scraping` package in your Go application:
 
 ```go
 package main
 
 import (
 	"fmt"
-	"certfr_scrapping" // Assuming your package is in a directory named certfr_scrapping
+	"certfr_scraping" // Assuming your package is in a directory named certfr_scraping
 )
 
 func main() {
 	fmt.Println("Collecting Alerts...")
-	alerts := certfr_scrapping.CollectAlert()
-	certfr_scrapping.PrettyPrint(alerts)
+	alerts := certfr_scraping.CollectAlert()
+	certfr_scraping.PrettyPrint(alerts)
 
 	fmt.Println("Collecting CTI...")
-	ctis := certfr_scrapping.CollectCti()
-	certfr_scrapping.PrettyPrint(ctis)
+	ctis := certfr_scraping.CollectCti()
+	certfr_scraping.PrettyPrint(ctis)
 
 	fmt.Println("Collecting Advisories...")
-	avis := certfr_scrapping.CollectAvis()
-	certfr_scrapping.PrettyPrint(avis)
+	avis := certfr_scraping.CollectAvis()
+	certfr_scraping.PrettyPrint(avis)
 }
 ```
 
@@ -74,7 +74,7 @@ to the console in a formatted, human-readable way.
 
 This package relies on the `colly` library for web scraping.
 
-- [**colly**](https://github.com/gocolly/colly): Fast and elegant scraping
+- [**colly**](https://github.com/gocolly/colly): Fast and elegant 
   framework for Go.
 
 ---
